@@ -1,0 +1,60 @@
+/* Decorative pointer: the native cursor and every page control stay usable. */
+.pointer-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  z-index: 9999;
+  pointer-events: none;
+  border: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(64, 157, 255, .4) 0%, rgba(64, 157, 255, .18) 40%, rgba(64, 157, 255, 0) 72%);
+  box-shadow: 0 0 15px 4px rgba(64, 157, 255, .18);
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+  transition: opacity .18s, visibility .18s;
+}
+
+.pointer-follower::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  transition: transform .22s, border-color .22s, background .22s;
+}
+
+.pointer-follower.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pointer-follower.is-interactive::after {
+  transform: scale(1.45);
+  border-color: rgba(64, 157, 255, .12);
+  background: rgba(64, 157, 255, .07);
+}
+
+.pointer-follower.is-pressed::after {
+  transform: scale(.75);
+  border-color: rgba(49, 92, 131, .6);
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .pointer-follower { display: none; }
+}
+
+@media print {
+  .pointer-follower { display: none; }
+}
+
+/* Black arrow with a white edge, matching the supplied cursor reference. */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, summary, [role="button"], [role="tab"] {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='32' viewBox='0 0 28 32'%3E%3Cpath d='M4 3L23 12L14 15L10 25Z' fill='%230c1015' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E") 4 3, auto;
+  }
+  button:disabled { cursor: default; }
+}

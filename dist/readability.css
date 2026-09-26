@@ -1,0 +1,38 @@
+/* Readable labels and captions at every breakpoint, without browser zoom. */
+.header-note,.date,.diagram-label,.case-meta span,.caption-right>span:first-child,
+.diagram-top,.diagram-bottom,.infra-label,.service-diagram p,.chain-node>span,
+.infra-diagram>div span,.portrait-photo figcaption,.campus-photo figcaption,
+.demo-kicker,.game-metrics,.cloud-explanation .eyebrow,.training-certificates>.eyebrow{font-size:12px;letter-spacing:.6px;color:#53604f}
+.eyebrow,.small-project .eyebrow,.project-caption .eyebrow,.contact-grid .eyebrow{font-size:14px;letter-spacing:1px}
+.chain-node small,.service-branches span,.personal-meta,.certificate-preview>span,
+.demo-footnote,.demo-controls>[data-progress],.step-status,.milestone-list small,
+.cloud-explanation pre,.cloud-explanation .cloud-takeaway,.memory-layout .text-link,
+.footer,.back-link{font-size:14px}
+.education p,.skill-groups p,.project-caption p,.contact-grid a,.contact-grid p,
+.case-meta strong,.text-link,.infra-diagram>div,.feature-list li,.case-row p.scope-note,
+.demo-feedback,.demo-intro,.cloud-explanation>p{font-size:16px}
+.lab-tabs button{font-size:16px}.lab-tabs{gap:0}.lab-tabs button{padding-left:18px;padding-right:18px}
+.portrait-photo figcaption,.campus-photo figcaption,.demo-kicker{flex-wrap:wrap}
+.infra-diagram{max-width:320px}.infra-diagram>div{gap:10px}.infra-diagram>div span{flex-shrink:0}.small-visual{height:365px}
+.service-branches{gap:8px}.service-branches span{padding:8px 10px}
+.diagram-top,.diagram-bottom{gap:15px;line-height:1.6}.diagram-bottom span:last-child{text-align:right}
+.landing-copy .landing-eyebrow{font-size:14px;letter-spacing:.8px;line-height:1.6;flex-wrap:wrap}
+.landing-intro{font-size:18px;line-height:1.8}
+.landing-primary,.landing-secondary{font-size:16px}
+.currently-building small,.edition-label,.landing-focus>span,.landing-footer>a{font-size:12px;letter-spacing:.7px}
+.currently-building strong,.landing-focus strong,.art-caption{font-size:14px}
+.edition-label{flex-wrap:wrap;gap:8px 18px;color:#56634f}.art-caption{color:#56634f}
+.landing-art .book{aspect-ratio:.7;min-height:440px}
+.landing-art .book-top,.landing-art .book-bottom{font-size:12px;letter-spacing:.5px;gap:10px;line-height:1.5}
+.landing-art .book-top span:last-child{white-space:nowrap}
+.landing-art .book-identity{padding-top:24px;padding-bottom:24px}
+.landing-art .book-identity strong{font-size:24px;font-weight:600;letter-spacing:.6px}
+.landing-art .book-identity span{font-size:13px;line-height:1.6;margin-top:10px}
+.landing-art .cover-title{font-size:clamp(48px,5.2vw,74px);letter-spacing:0;gap:8px 10px;margin-top:24px}
+.landing-footer{gap:25px;flex-wrap:wrap}.landing-focus{flex-wrap:wrap;gap:12px}
+@media(max-width:1050px){.landing-art .book{padding:22px;min-height:430px}.landing-art .book-identity strong{font-size:20px}.landing-art .book-top,.landing-art .book-bottom{font-size:11px}.landing-art .book-identity span{font-size:12px}.landing-intro{font-size:17px}.landing-copy .landing-eyebrow{font-size:12px}.currently-building strong{font-size:14px}.landing-primary,.landing-secondary{font-size:15px}}
+@media(max-width:760px){.landing-art{max-width:370px}.landing-art .book{min-height:450px;padding:24px}.landing-art .cover-title{font-size:62px}.landing-art .book-identity strong{font-size:22px}.landing-art .book-top,.landing-art .book-bottom{font-size:12px}.landing-copy .landing-eyebrow{font-size:12px}.landing-copy h1{font-size:clamp(38px,7.5vw,58px)}.landing-focus{max-width:none}.landing-footer>a{font-size:12px}.landing-focus strong{font-size:14px}.landing-focus>span{width:100%}.landing-footer{display:flex}.landing-footer>a{margin-top:0}}
+@media(max-width:640px){.lab-tabs button{font-size:14px;padding:14px 8px}.step-status{margin-left:25px;font-size:13px}.milestone-list li>div{min-width:140px}.solid-button{font-size:15px}.demo-kicker{font-size:12px}.small-visual{padding:20px;height:365px}.feature-visual{height:420px}.diagram-top,.diagram-bottom{font-size:12px;letter-spacing:.3px}.chain-node small{font-size:13px}.chain-node{min-height:124px}.project-caption p,.education p,.contact-grid a,.contact-grid p{font-size:16px}.contact-grid{grid-template-columns:1fr}.contact-grid .eyebrow{margin-bottom:10px}.certificate-preview>span{font-size:14px}.portrait-photo figcaption,.campus-photo figcaption{font-size:12px}.training-certificates>.eyebrow{font-size:13px}.footer{font-size:13px;gap:18px;flex-wrap:wrap}.demo-intro,.demo-feedback{font-size:15px}}
+@media(max-width:380px){.landing-art .cover-title{font-size:54px}.landing-art .book{padding:20px;min-height:430px}.landing-art .book-identity strong{font-size:20px}.landing-primary,.landing-secondary{font-size:14px}.landing-actions{gap:18px}.landing-copy h1{font-size:35px}.service-branches span{font-size:13px;padding:8px}.infra-diagram>div{font-size:14px}}
+
+.campus-photo.marwari-photo img{object-position:center 76%}.marwari-photo{scroll-margin-top:100px}

@@ -1,0 +1,44 @@
+/* An editorial opening: a clear introduction beside the original book cover. */
+.landing-page .site-header{padding:0 6%;background:#e8e9e5;border-color:#cdd0c9}
+.landing-page .hero.landing-hero{height:auto;max-height:none;min-height:calc(100svh - 82px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:48px 6%;padding:60px 6% 25px;background:#e8e9e5;align-items:center;overflow:hidden}
+.landing-copy{max-width:700px;padding:20px 0}
+.landing-eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:500;letter-spacing:1.3px;color:#5f6d61}
+.status-dot{height:6px;width:6px;border-radius:50%;background:#607e69;flex:none;box-shadow:0 0 0 4px #607e6910}
+.eyebrow-divider{color:#a3aca0;margin:0 3px}
+.landing-copy h1{font-family:Manrope,Arial,sans-serif;font-size:clamp(42px,5.15vw,82px);font-weight:500;line-height:1.12;letter-spacing:-3.8px;margin:32px 0 26px}
+.landing-copy h1 em{font-style:normal;color:#788776}
+.landing-intro{font-size:17px;line-height:1.85;max-width:445px;color:#626b61}
+.landing-actions{display:flex;align-items:center;gap:30px;margin-top:34px}
+.landing-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:35px;background:#303c32;color:#f7f8f4;padding:16px 22px;font-size:14px;border:1px solid #303c32;transition:background .25s,transform .25s}
+.landing-primary>span{font-size:21px;line-height:1;transition:transform .25s}
+.landing-primary:hover{background:#435a47;transform:translateY(-2px)}
+.landing-primary:hover>span{transform:translate(2px,-2px)}
+.landing-secondary{font-size:14px;border-bottom:1px solid #a3aca0;padding:10px 0;color:#3a493c;transition:color .25s,border-color .25s}
+.landing-secondary>span{margin-left:16px}.landing-secondary:hover{color:#172c1d;border-color:#172c1d}
+.currently-building{display:flex;align-items:center;gap:16px;border-top:1px solid #cbd0c6;margin-top:50px;padding-top:22px;max-width:455px}
+.currently-icon{font-size:27px;color:#778873;align-self:flex-start;line-height:1.5}
+.currently-building small{display:block;font-size:9px;letter-spacing:1.4px;color:#778272;margin-bottom:7px}
+.currently-building strong{font-size:13px;font-weight:500;line-height:1.7;display:block}.currently-building strong>span{font-weight:400;color:#73806c}
+.currently-arrow{margin-left:auto;color:#6c7b65;transition:transform .25s}.currently-building:hover .currently-arrow{transform:translate(3px,-3px)}
+.landing-art{min-width:0;width:100%;max-width:430px;justify-self:end;padding:0 12px}
+.edition-label{display:flex;justify-content:space-between;gap:20px;font-size:8px;letter-spacing:1.5px;color:#788171;margin-bottom:28px}
+.book-stage{position:relative;padding:4px 12px 16px;perspective:1200px}
+.book-stage:before{content:'';position:absolute;inset:5px 6px 14px 20px;background:#d4d8cd;border:1px solid #c8cec0;transform:rotate(3deg)}
+.landing-art .book{width:100%;padding:26px 30px 20px;transform:rotate(-5deg);animation:none;box-shadow:12px 22px 28px #242c2923,2px 3px 5px #1c252322;aspect-ratio:.74}
+.landing-art .book:hover,.landing-art .book:focus-visible{transform:rotate(-1deg) translateY(-7px);box-shadow:18px 28px 35px #242c2928}
+.landing-art .cover-title{font-size:clamp(46px,5.4vw,76px);gap:10px 14px;margin:32px 0 0;line-height:1.03;animation:none}
+.landing-art .cover-title span{animation:none}.landing-art .book-top{font-size:8px;letter-spacing:1px}.landing-art .book-identity{padding-bottom:28px}.landing-art .book-identity strong{font-size:11px;letter-spacing:2.6px}.landing-art .book-identity span{font-size:8px}.landing-art .book-bottom{font-size:7px;letter-spacing:.8px}
+.art-caption{display:flex;align-items:center;gap:12px;margin-top:18px;font-size:10px;color:#7c8776;line-height:1.6}.caption-line{height:1px;width:32px;background:#aeb8a5}.art-edition{margin-left:auto;font-size:22px;letter-spacing:-1px;color:#8c9984}
+.landing-footer{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #cbd0c6;padding-top:22px;margin-top:0;font-size:9px;letter-spacing:1px;color:#6b7866}
+.landing-focus{display:flex;align-items:center;gap:20px}.landing-focus>span{font-size:8px;color:#8a9584}.landing-focus strong{font-size:11px;font-weight:400;letter-spacing:0}.landing-focus i{font-style:normal;color:#a7b09f}.landing-footer>a{white-space:nowrap}.landing-footer>a span{font-size:17px;margin-left:16px}
+@media(min-width:1500px){.landing-page .hero.landing-hero{padding-left:max(6%,calc((100vw - 1400px)/2));padding-right:max(6%,calc((100vw - 1400px)/2))}}
+@media(max-width:1050px){.landing-page .hero.landing-hero{gap:45px 5%;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);padding-top:48px}.landing-copy h1{font-size:clamp(40px,5vw,54px);letter-spacing:-2.5px}.landing-art{padding:0 5px}.landing-art .book{padding:22px 25px 18px}.landing-art .cover-title{font-size:clamp(43px,5.3vw,60px);gap:8px;margin-top:28px}.landing-art .book-identity{padding-bottom:20px}.landing-art .book-identity strong{font-size:9px;letter-spacing:2px}.landing-intro{font-size:15px}.landing-eyebrow{font-size:8px;letter-spacing:1px}.landing-actions{gap:23px}.landing-primary{padding:14px 18px;gap:23px}.currently-building strong>span{display:block}.currently-building{margin-top:35px}}
+@media(max-width:760px){.landing-page .hero.landing-hero{grid-template-columns:1fr;padding:45px 7% 24px;gap:45px;min-height:0}.landing-copy{padding:0;max-width:570px}.landing-copy h1{font-size:clamp(39px,7.5vw,58px);letter-spacing:-2.1px;margin:26px 0 22px}.landing-eyebrow{font-size:9px;letter-spacing:.8px;gap:8px}.landing-intro{max-width:470px;font-size:15px;line-height:1.75}.landing-actions{margin-top:28px}.currently-building{max-width:none;margin-top:32px}.currently-building strong>span{display:inline}.landing-art{justify-self:center;max-width:340px;padding:0 10px}.landing-art .book{padding:24px 28px 20px}.landing-art .cover-title{font-size:62px;gap:8px 12px;margin-top:30px}.landing-art .book-identity strong{font-size:10px;letter-spacing:2px}.landing-art .book-identity{padding-bottom:24px}.landing-footer{margin-top:0;align-items:flex-start;gap:18px}.landing-focus{flex-wrap:wrap;gap:7px 13px;max-width:240px}.landing-focus>span{width:100%}.landing-focus strong{font-size:10px}.landing-footer>a{font-size:8px;letter-spacing:.5px;padding-top:2px}.landing-footer>a span{margin-left:5px}.edition-label{margin-bottom:22px}}
+@media(max-width:380px){.landing-copy h1{font-size:36px;letter-spacing:-1.8px}.landing-eyebrow{font-size:8px;gap:6px}.landing-primary{font-size:13px;padding:14px 16px;gap:20px}.landing-secondary{font-size:13px}.landing-actions{gap:23px}.currently-building strong{font-size:12px}.currently-building strong>span{display:block}.landing-art .cover-title{font-size:55px}.landing-footer{display:block}.landing-footer>a{display:inline-block;margin-top:18px}}
+@media(prefers-reduced-motion:reduce){.landing-art .book:hover,.landing-art .book:focus-visible{transform:rotate(-5deg)}.landing-primary:hover{transform:none}.landing-primary:hover>span,.currently-building:hover .currently-arrow{transform:none}}
+/* Corrected emphasis: prominent cover identity and the original hero statement. */
+.landing-art .book-identity strong{font-size:23px;font-weight:600;letter-spacing:1px;line-height:1.25}.landing-art .book-identity span{font-size:9px;margin-top:11px}.landing-copy .landing-eyebrow{font-size:12px;letter-spacing:1px}
+@media(max-width:1050px){.landing-art .book-identity strong{font-size:18px;letter-spacing:.5px}}
+@media(max-width:760px){.landing-art .book-identity strong{font-size:20px;letter-spacing:.7px}.landing-copy .landing-eyebrow{font-size:11px}}
+@media(max-width:380px){.landing-art .book-identity strong{font-size:18px}.landing-copy .landing-eyebrow{font-size:10px}}
+
