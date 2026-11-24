@@ -33,7 +33,7 @@ The website is built with a focus on **responsive design, clean UI, fast loading
 * Contact section
 * Organized project pages
 * Local assets and optimized static files
-* Easy deployment using GitHub Pages
+* Easy deployment using GitHub Pages 
 
 ---
 
@@ -76,7 +76,7 @@ The production-ready website is contained inside the `dist/` directory.
 
 ## 💻 Run Locally
 
-Clone the repository:
+Clone repository:
 
 ```bash
 git clone https://github.com/itzsonu/mritunjai-portfolio.git
